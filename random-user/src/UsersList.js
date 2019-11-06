@@ -21,11 +21,12 @@ export default class UserList extends Component {
         .then(res => console.log("logging grabArray",this.state.grabArray))
     }
     
-    generateContactList = () => {
-        const contactList = this.state.grabArray.map((user, i) => {
+    TheContactList = () => {
+        const contactList = this.state.grabArray.map((user) => {
             return (<tr>
                 <td>{user.name.first}</td>
                 <td>{user.name.last}</td>
+                <td>{user.gender}</td>
                 <img src={user.picture.thumbnail}/>
             </tr>)
         })
@@ -39,11 +40,12 @@ export default class UserList extends Component {
                 <h1>Random Names</h1>
                 <table align="center" className="ordersTable">
                         <tr>
-                            <th>Name</th>
-                            <th>last</th>
-                            <th>thumbnail</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th>Picture</th>
                         </tr>
-                        {this.generateContactList()}
+                        {this.TheContactList()}
                     </table>
             </div>
         )
