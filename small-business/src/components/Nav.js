@@ -19,7 +19,7 @@ const Nav = (props) => {
   return (
     <AppBar position="relative">
       <Toolbar>
-      <Typography variant="h6" style={{ flexGrow: "1" }}>
+      <Typography variant="h6" style={{ flexGrow: "2" }}>
         Austin Small Business
       </Typography>
         <ul className="nav-list">

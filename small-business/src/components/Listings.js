@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Listings = (props) => {
   return (
-    <Container maxWidth="lg" className="listing-container">
+    <Container maxWidth="lg" className="listing">
       <Table>
         <TableHead>
           <TableRow>
