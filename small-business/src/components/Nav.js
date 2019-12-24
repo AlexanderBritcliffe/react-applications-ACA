@@ -16,6 +16,8 @@ const Nav = (props) => {
     window.location.replace("/")
   }
 
+  //ternary operator for render**
+
   return (
     <AppBar position="relative">
       <Toolbar>
