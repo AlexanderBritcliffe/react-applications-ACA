@@ -28,7 +28,6 @@ const Router = () => {
   
   return (
     <Switch>
-      {console.log(document.cookie)}
       <Route exact path="/" component={Bars}/>
       <Route path="/bar/:id" component={Bar}/>
       <Route path="/login" component={Login}/>
